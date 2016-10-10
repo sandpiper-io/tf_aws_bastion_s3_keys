@@ -59,6 +59,7 @@ data "template_file" "user_data" {
 //}
 
 resource "aws_launch_configuration" "bastion" {
+  key_name = "sandpiper"
   name_prefix          = "${var.name}-"
   image_id             = "${var.ami}"
   instance_type        = "${var.instance_type}"

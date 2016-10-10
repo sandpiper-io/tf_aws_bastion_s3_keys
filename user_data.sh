@@ -30,7 +30,7 @@ KEYS_FILE=/home/$SSH_USER/.ssh/authorized_keys
 TEMP_KEYS_FILE=$(mktemp /tmp/authorized_keys.XXXXXX)
 PUB_KEYS_DIR=/home/$SSH_USER/pub_key_files/
 
-[[ -z $BUCKET_URI ]] && BUCKET_URI="s3://$BUCKET_NAME/"
+[ -z $BUCKET_URI ] && BUCKET_URI="s3://$BUCKET_NAME/"
 
 mkdir -p $PUB_KEYS_DIR
 
